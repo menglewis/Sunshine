@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:id="@+id/test">
+
+    <TextView
+        android:text="@string/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todayView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="74dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/high"
+        android:id="@+id/highView"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/todayView"
+        android:layout_alignLeft="@+id/todayView"
+        android:layout_alignStart="@+id/todayView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunView"
+        android:layout_below="@+id/highView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="64dp"
+        android:src="@drawable/ic_launcher"
+        android:longClickable="true"
+        android:contentDescription="@string/sunshine_image_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/low"
+        android:id="@+id/lowView"
+        android:layout_toEndOf="@+id/todayView"
+        android:layout_alignBaseline="@+id/statusView"
+        android:layout_alignBottom="@+id/statusView"
+        android:layout_alignLeft="@+id/highView"
+        android:layout_alignStart="@+id/highView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:id="@+id/statusView"
+        android:layout_below="@+id/sunView"
+        android:layout_alignLeft="@+id/sunView"
+        android:layout_alignStart="@+id/sunView" />
+
+</RelativeLayout>
